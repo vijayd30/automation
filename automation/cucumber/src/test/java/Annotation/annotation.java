@@ -19,7 +19,7 @@ public class annotation {
 
     @When("I enter password as {string}")
     public void enterPassword(String password) {
-        ;WebElement we = driver.findElement(By.name("signin"));
+        WebElement we = driver.findElement(By.name("signin"));
         we.click();
     }
     @Then("Login should fail")
